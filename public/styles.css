@@ -13,7 +13,7 @@
   --mainWhite: #fff;
   --mainGrey: #e5e5e5;
   --mainTransition: all 0.3s ease-in-out;
-  --letterSpacing: 0.5rem;
+  --letterSpacing: 0.1rem;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -155,8 +155,7 @@ a {
   /* animation */
   animation: slideFromLeft 5s ease-in-out 1;
 }
-.main-btn,
-.banner-btn {
+.main-btn {
   display: inline-block;
   background: var(--primaryColor);
   text-transform: uppercase;
@@ -169,15 +168,9 @@ a {
   margin-top: 2rem;
   transition: var(--mainTransition);
 }
-.main-btn:hover,
-.banner-btn:hover {
+.main-btn:hover:hover {
   color: var(--mainWhite);
   opacity: 0.7;
-}
-.banner-btn {
-  padding: 1.2rem 1.5rem;
-  /* animation */
-  animation: show 5s ease-in-out 1;
 }
 /* end  header */
 /* animations  */
@@ -249,6 +242,11 @@ a {
   transition: var(--mainTransition);
   display: inline-block;
 }
+.skill-icon img {
+  border-radius: 50%;
+  width: 50%;
+}
+
 .skill-title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -330,28 +328,25 @@ a {
   max-width: 26rem;
 }
 .product {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .product-img {
   width: 100%;
   display: block;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   margin-bottom: 2rem;
 }
 .product-title {
   color: var(--mainWhite);
-  text-transform: uppercase;
-  letter-spacing: var(--letterSpacing);
   margin-bottom: 1rem;
 }
 .product-price {
   color: var(--primaryColor);
-  letter-spacing: var(--letterSpacing);
   font-family: var(--slantedText);
 }
 @media screen and (min-width: 768px) {
   .product {
-    float: left;
+    float: right;
     width: 50%;
     padding: 2rem 1rem;
   }
@@ -490,9 +485,7 @@ a {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-.contact-text {
-  text-transform: uppercase;
-}
+
 .form-control {
   display: block;
   width: 100%;

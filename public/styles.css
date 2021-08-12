@@ -126,7 +126,7 @@ a {
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('./images/main-bcg.jpg') center/cover no-repeat fixed;
+    url('./images/main-bcg2.jpg') center/cover no-repeat fixed;
   position: relative;
 }
 /* banner */
@@ -218,7 +218,7 @@ a {
 /* end of animations  */
 /* content divider */
 .content-divider {
-  height: 0.5rem;
+  height: 0.3rem;
   background: linear-gradient(
     to left,
     var(--primaryColor),
@@ -276,7 +276,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .skill {
-    width: 25%;
+    width: 16.6%;
   }
 }
 /* end of skills */
@@ -287,8 +287,8 @@ a {
 }
 .about-picture-container {
   background: var(--primaryColor);
-  border: 0.5rem solid var(--primaryColor);
-  border-radius: 1rem;
+  border: 0.3rem solid var(--primaryColor);
+  border-radius: 0.5rem;
   /* overflow */
   overflow: hidden;
 }
@@ -297,10 +297,10 @@ a {
   display: block;
   transition: var(--mainTransition);
 }
-.about-picture-container:hover .about-picture {
+/* .about-picture-container:hover .about-picture {
   opacity: 0.5;
   transform: scale(1.2);
-}
+} */
 .about-text {
   margin: 1rem 0;
   max-width: 26rem;

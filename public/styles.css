@@ -6,17 +6,19 @@
   box-sizing: border-box;
 }
 :root {
-  --slantedText: 'Noto Sans JP', sans-serif;
-  --primaryColor: #698f3f;
+  --slantedText: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primaryColor: #2F3C7E;
   --secondaryColor: #fca311;
   --mainDark: #3a3e3b;
-  --mainWhite: #fff;
+  --mainWhite: #fefefe;
+  --mainPink: #FBEAEB;
   --mainGrey: #e5e5e5;
+  --skillsHover: #6d738a;
   --mainTransition: all 0.3s ease-in-out;
   --letterSpacing: 0.1rem;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 /* helper/utility classes */
@@ -30,7 +32,7 @@ a {
   text-align: center;
 }
 .text-primary {
-  color: var(--primaryColor);
+  color: var(--mainWhite);
 }
 /* clearfix */
 .clearfix::after,
@@ -88,7 +90,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 2;
-  background: var(--mainGrey);
+  background: var(--mainWhite);
   padding-top: 1rem;
   padding-left: 2rem;
   transition: var(--mainTransition);
@@ -125,8 +127,8 @@ a {
 /* header */
 .header {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('./images/main-bcg2.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('./images/main-bcg-3.jpg') center/cover no-repeat fixed;
   position: relative;
 }
 /* banner */
@@ -160,7 +162,7 @@ a {
   background: var(--primaryColor);
   text-transform: uppercase;
   padding: 0.8rem 1.2rem;
-  color: var(--mainDark);
+  color: var(--mainWhite);
   font-weight: bold;
   outline: 0.2rem solid var(--primaryColor);
   outline-offset: 4px;
@@ -229,7 +231,7 @@ a {
 /*end of content divider */
 /* skills */
 .skills {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
 }
 .skill {
   padding: 2.5rem 0;
@@ -260,7 +262,7 @@ a {
 }
 
 .skill:hover {
-  background: var(--primaryColor);
+  background: var(--skillsHover);
 }
 .skill:hover .skill-title {
   color: var(--mainWhite);
@@ -302,6 +304,7 @@ a {
   transform: scale(1.2);
 } */
 .about-text {
+  text-align:justify;
   margin: 1rem 0;
   max-width: 26rem;
 }
@@ -316,14 +319,14 @@ a {
 /* end of about  */
 /* products  */
 .products {
-  background: var(--mainDark);
+  background: var(--mainWhite);
 }
 .products-info,
 .products-inventory {
   padding: 2rem 0;
 }
 .product-text {
-  color: var(--mainWhite);
+  color: var(--primaryColor);
   margin: 1rem 0;
   max-width: 26rem;
 }
@@ -337,7 +340,7 @@ a {
   margin-bottom: 2rem;
 }
 .product-title {
-  color: var(--mainWhite);
+  color: var(--primaryColor);
   margin-bottom: 1rem;
 }
 .product-price {
@@ -380,7 +383,7 @@ a {
 /* end of products  */
 /* services */
 .services {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
 }
 .services-title {
   padding-top: 4rem;
@@ -539,7 +542,7 @@ a {
   font-size: 0.85rem;
 }
 .syllabus {
-  margin: 4px;
+  margin: 0px;
   padding: 80px;
   background-color: #3a3e3b;
   box-sizing: border-box;
@@ -547,7 +550,6 @@ a {
 .course-heading {
   color: var(--primaryColor);
   text-decoration: underline;
-  font-style: normal;
 }
 .sub-topics {
   padding-left: 1em;
